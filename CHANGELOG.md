@@ -14,6 +14,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - README documentation
 - Git ignore file
 - Changelog template
+- Backend API initial setup
+  - Base entity model with audit fields
+  - API startup configuration
+  - Project structure documentation
 
 ### Changed
 - Updated repository description

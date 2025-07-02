@@ -33,6 +33,15 @@ A robust bug tracking system built with modern technologies to showcase professi
 - **Database**: PostgreSQL
 - **UI Framework**: Material-UI
 
+## 📁 Project Structure
+
+```
+BugTracker.Api/
+├── Models/
+│   └── BaseEntity.cs
+└── Program.cs
+```
+
 ## 📱 Architecture
 
 The application follows a strict MVC (Model-View-Controller) architecture pattern:
