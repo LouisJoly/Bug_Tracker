@@ -37,9 +37,15 @@ A robust bug tracking system built with modern technologies to showcase professi
 
 ```
 BugTracker.Api/
+├── Controllers/
 ├── Models/
-│   └── BaseEntity.cs
-└── Program.cs
+│   ├── BaseEntity.cs
+│   ├── BaseResponse.cs
+│   └── User.cs
+├── Properties/
+├── BugTracker.Api.csproj
+├── appsettings.json
+└── appsettings.Development.json
 ```
 
 ## 📱 Architecture
@@ -86,25 +92,6 @@ The application follows a strict MVC (Model-View-Controller) architecture patter
 - Database schema
 - Security guidelines
 - GDPR compliance documentation
-
-## 🏗️ Project Structure
-
-```
-Bug_Tracker/
-├── Backend/
-│   ├── Controllers/
-│   ├── Models/
-│   ├── Services/
-│   └── Data/
-├── Frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   └── services/
-│   └── public/
-└── Database/
-    └── migrations/
-```
 
 ## 🚀 Getting Started
 

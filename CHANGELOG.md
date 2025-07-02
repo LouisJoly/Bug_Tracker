@@ -18,6 +18,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Base entity model with audit fields
   - API startup configuration
   - Project structure documentation
+- API configuration
+  - Project configuration (csproj)
+  - App settings (json)
+  - Development environment settings
+- Core models
+  - BaseResponse for API responses
+  - User model for authentication
+  - Model validation and audit fields
 
 ### Changed
 - Updated repository description
