@@ -26,6 +26,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - BaseResponse for API responses
   - User model for authentication
   - Model validation and audit fields
+- API documentation
+  - HTTP request documentation
+  - Request/response examples
+  - Authentication examples
+- API controllers
+  - BaseController with common functionality
+  - Error handling
+  - Response formatting
+  - Authentication middleware
 
 ### Changed
 - Updated repository description

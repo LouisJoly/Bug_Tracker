@@ -38,6 +38,7 @@ A robust bug tracking system built with modern technologies to showcase professi
 ```
 BugTracker.Api/
 ├── Controllers/
+│   └── BaseController.cs
 ├── Models/
 │   ├── BaseEntity.cs
 │   ├── BaseResponse.cs
@@ -45,7 +46,8 @@ BugTracker.Api/
 ├── Properties/
 ├── BugTracker.Api.csproj
 ├── appsettings.json
-└── appsettings.Development.json
+├── appsettings.Development.json
+└── BugTracker.Api.http
 ```
 
 ## 📱 Architecture
