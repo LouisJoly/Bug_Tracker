@@ -35,6 +35,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Error handling
   - Response formatting
   - Authentication middleware
+- Development tools
+  - Launch settings configuration
+  - Development server settings
+  - HTTPS development certificate
+  - Environment-specific configurations
 
 ### Changed
 - Updated repository description

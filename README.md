@@ -44,6 +44,7 @@ BugTracker.Api/
 │   ├── BaseResponse.cs
 │   └── User.cs
 ├── Properties/
+│   └── launchSettings.json
 ├── BugTracker.Api.csproj
 ├── appsettings.json
 ├── appsettings.Development.json
