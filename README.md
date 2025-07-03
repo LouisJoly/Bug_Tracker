@@ -58,6 +58,10 @@ BugTracker.Api/
 ├── appsettings.json
 ├── appsettings.Development.json
 └── BugTracker.Api.http
+BugTracker.Api.Tests/
+├── BugTracker.Api.Tests.csproj
+├── DatabaseConnectionTest.cs
+└── UnitTest1.cs
 ```
 
 ## 📱 Architecture
