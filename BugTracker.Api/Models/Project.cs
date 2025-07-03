@@ -33,7 +33,7 @@ namespace BugTracker.Api.Models
         public int TotalBugs => Bugs?.Count ?? 0;
 
         // Automatic calculation of resolved bugs
-        public int ResolvedBugs => Bugs?.Count(bug => bug.Status == BugStatus.Resolved) ?? 0;
+        public int ResolvedBugs => Bugs?.Count(bug => bug.Status == Status.Fixed) ?? 0;
 
         // Project configuration
         public bool SendNotifications { get; set; } = true;
