@@ -74,12 +74,7 @@ namespace BugTracker.Api.Controllers
 
         protected IActionResult ForbiddenResponse(string message)
         {
-            var response = new BaseResponse<object>(message)
-            {
-                Success = false,
-                StatusCode = 403
-            };
-            return Forbid(response);
+            return Forbid(message);
         }
     }
 }
