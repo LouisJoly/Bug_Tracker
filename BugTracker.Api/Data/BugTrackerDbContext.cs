@@ -31,53 +31,53 @@ namespace BugTracker.Api.Data
 
             // Configure Project
             modelBuilder.Entity<Project>()
-                .HasMany(project => project.TeamMembers)
-                .WithMany(user => user.Projects)
+                .HasMany(p => p.TeamMembers)
+                .WithMany(u => u.Projects)
                 .UsingEntity(j => j.ToTable("ProjectTeamMembers"));
 
             modelBuilder.Entity<Project>()
-                .HasMany(project => project.Bugs)
-                .WithOne(bug => bug.Project)
-                .HasForeignKey(bug => bug.ProjectId)
+                .HasMany(p => p.Bugs)
+                .WithOne(b => b.Project)
+                .HasForeignKey(b => b.ProjectId)
                 .OnDelete(DeleteBehavior.Cascade);
 
             // Configure Bug
             modelBuilder.Entity<Bug>()
-                .HasOne(bug => bug.AssignedTo)
-                .WithMany(user => user.AssignedBugs)
-                .HasForeignKey(bug => bug.AssignedToId)
+                .HasOne(b => b.AssignedTo)
+                .WithMany(u => u.AssignedBugs)
+                .HasForeignKey(b => b.AssignedToId)
                 .OnDelete(DeleteBehavior.SetNull);
 
             modelBuilder.Entity<Bug>()
-                .HasOne(bug => bug.ReportedBy)
-                .WithMany(user => user.ReportedBugs)
-                .HasForeignKey(bug => bug.ReportedById)
+                .HasOne(b => b.ReportedBy)
+                .WithMany(u => u.ReportedBugs)
+                .HasForeignKey(b => b.ReportedById)
                 .OnDelete(DeleteBehavior.SetNull);
 
             // Configure BugComment
             modelBuilder.Entity<BugComment>()
-                .HasOne(comment => comment.User)
-                .WithMany(user => user.Comments)
-                .HasForeignKey(comment => comment.UserId)
+                .HasOne(c => c.User)
+                .WithMany(u => u.Comments)
+                .HasForeignKey(c => c.UserId)
                 .OnDelete(DeleteBehavior.SetNull);
 
             modelBuilder.Entity<BugComment>()
-                .HasOne(comment => comment.Bug)
-                .WithMany(bug => bug.Comments)
-                .HasForeignKey(comment => comment.BugId)
+                .HasOne(c => c.Bug)
+                .WithMany(b => b.Comments)
+                .HasForeignKey(c => c.BugId)
                 .OnDelete(DeleteBehavior.Cascade);
 
             // Configure BugAttachment
             modelBuilder.Entity<BugAttachment>()
-                .HasOne(attachment => attachment.UploadedBy)
-                .WithMany(user => user.Attachments)
-                .HasForeignKey(attachment => attachment.UploadedById)
+                .HasOne(a => a.UploadedBy)
+                .WithMany(u => u.Attachments)
+                .HasForeignKey(a => a.UploadedById)
                 .OnDelete(DeleteBehavior.SetNull);
 
             modelBuilder.Entity<BugAttachment>()
-                .HasOne(attachment => attachment.Bug)
-                .WithMany(bug => bug.Attachments)
-                .HasForeignKey(attachment => attachment.BugId)
+                .HasOne(a => a.Bug)
+                .WithMany(b => b.Attachments)
+                .HasForeignKey(a => a.BugId)
                 .OnDelete(DeleteBehavior.Cascade);
         }
     }
