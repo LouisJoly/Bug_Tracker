@@ -50,6 +50,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Database connection with Npgsql
   - CORS policy setup
   - Improved service organization
+  - Swagger/OpenAPI integration
+  - Development environment checks
+  - Error handling middleware
 - API documentation
   - HTTP request documentation
   - Request/response examples
@@ -89,6 +92,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Updated Project.cs to use Status.Fixed
   - Fixed status validation
   - Improved status transitions
+- Controller improvements
+  - Simplified BaseController
+  - Improved error handling
+  - Enhanced response formatting
 
 ### Security
 - No security-related changes yet
