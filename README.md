@@ -30,8 +30,9 @@ A robust bug tracking system built with modern technologies to showcase professi
 
 - **Backend**: C# with ASP.NET Core
 - **Frontend**: React (TypeScript)
-- **Database**: PostgreSQL
+- **Database**: PostgreSQL with Npgsql
 - **UI Framework**: Material-UI
+- **Security**: CORS enabled
 
 ## 📁 Project Structure
 

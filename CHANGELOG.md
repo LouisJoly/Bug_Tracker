@@ -37,6 +37,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - BugTrackerDbContext for database operations
   - Entity relationships configuration
   - Database configuration
+- API configuration
+  - Database connection with Npgsql
+  - CORS policy setup
+  - Improved service organization
 - API documentation
   - HTTP request documentation
   - Request/response examples
