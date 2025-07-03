@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace BugTracker.Api.Models
 {
     public enum Status
