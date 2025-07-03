@@ -8,6 +8,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Comprehensive test suite
+  - EnumsTests for Priority and Status enums
+  - UserTests for User model validation
+  - Test cases for required fields and string lengths
+  - Navigation properties testing
+- User model enhancements
+  - Validation attributes for all string fields
+  - Session management properties
+  - Navigation properties initialization
+  - Session expiration validation
+- Testing infrastructure updates
+  - Coverlet for code coverage
+  - xUnit 3.0.0 test framework
+  - Test project configuration
+  - Test data initialization
 - Initial project setup with basic structure
 - Development status badge
 - Project roadmap

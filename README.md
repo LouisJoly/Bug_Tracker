@@ -33,7 +33,7 @@ A robust bug tracking system built with modern technologies to showcase professi
 - **Database**: PostgreSQL with Npgsql
 - **UI Framework**: Material-UI
 - **Security**: CORS enabled
-- **Testing**: xUnit 3.0.0
+- **Testing**: xUnit 3.0.0, Coverlet for code coverage
 - **API Documentation**: Swagger/OpenAPI
 
 ## 📁 Project Structure
@@ -63,6 +63,8 @@ BugTracker.Api/
 BugTracker.Api.Tests/
 ├── BugTracker.Api.Tests.csproj
 ├── DatabaseConnectionTest.cs
+├── EnumsTests.cs
+├── UserTests.cs
 └── UnitTest1.cs
 ```
 
