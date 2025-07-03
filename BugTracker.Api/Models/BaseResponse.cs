@@ -28,29 +28,38 @@ namespace BugTracker.Api.Models
             Timestamp = DateTime.UtcNow;
             StatusCode = 200;
             Errors = new List<string>();
+            Message = string.Empty;
         }
 
         public BaseResponse(T data)
         {
             Data = data;
+            Success = true;
+            Timestamp = DateTime.UtcNow;
+            StatusCode = 200;
+            Errors = new List<string>();
+            Message = string.Empty;
         }
 
         public BaseResponse(string message, bool success = false)
         {
             Success = success;
-            Message = message;
+            Message = message ?? string.Empty;
             if (!success)
             {
                 StatusCode = 400;
             }
+            Errors = new List<string>();
+            Timestamp = DateTime.UtcNow;
         }
 
         public BaseResponse(Exception ex)
         {
             Success = false;
-            Message = ex.Message;
+            Message = ex.Message ?? string.Empty;
             StatusCode = 500;
-            Errors.Add(ex.Message);
+            Errors = new List<string> { ex.Message ?? "An unknown error occurred" };
+            Timestamp = DateTime.UtcNow;
         }
 
         public bool Validate()
