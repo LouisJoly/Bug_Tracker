@@ -33,6 +33,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Priority enum for issue severity
   - Project model for organization
   - Status enum for issue states
+- Model enhancements
+  - Data annotations for enums
+  - Navigation properties for relationships
+  - Status enum improvements
+  - Project status validation
 - Database structure
   - BugTrackerDbContext for database operations
   - Entity relationships configuration
@@ -80,6 +85,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Fixed entity relationship configurations
   - Improved navigation property naming
   - Fixed cascading behavior
+- Status enum usage
+  - Updated Project.cs to use Status.Fixed
+  - Fixed status validation
+  - Improved status transitions
 
 ### Security
 - No security-related changes yet
