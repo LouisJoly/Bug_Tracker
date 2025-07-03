@@ -1,13 +1,23 @@
+using BugTracker.Api.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
+// Configuration
 builder.Configuration
     .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
     .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true)
     .AddEnvironmentVariables();
 
+// Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Database configuration
+builder.Services.AddDbContext<BugTrackerDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("BugTrackerDb")));
+
+// CORS configuration
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", builder =>
