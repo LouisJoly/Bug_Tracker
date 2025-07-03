@@ -16,5 +16,9 @@ namespace BugTracker.Api.Models
 
         [JsonPropertyName("isDeleted")]
         public bool IsDeleted { get; set; } = false;
+
+        [JsonPropertyName("lastModifiedById")]
+        [JsonInclude]
+        public int? LastModifiedById { get; set; } 
     }
 }
