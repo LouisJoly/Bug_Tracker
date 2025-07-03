@@ -38,5 +38,12 @@ namespace BugTracker.Api.Models
 
         [NotMapped]
         public bool IsSessionExpired => DateTime.UtcNow > SessionExpiration;
+
+        // Navigation properties
+        public virtual ICollection<Project> Projects { get; set; } = new List<Project>();
+        public virtual ICollection<Bug> AssignedBugs { get; set; } = new List<Bug>();
+        public virtual ICollection<Bug> ReportedBugs { get; set; } = new List<Bug>();
+        public virtual ICollection<BugComment> Comments { get; set; } = new List<BugComment>();
+        public virtual ICollection<BugAttachment> Attachments { get; set; } = new List<BugAttachment>();
     }
 }
