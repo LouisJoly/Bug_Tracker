@@ -39,9 +39,17 @@ A robust bug tracking system built with modern technologies to showcase professi
 BugTracker.Api/
 ├── Controllers/
 │   └── BaseController.cs
+├── Data/
+│   └── BugTrackerDbContext.cs
 ├── Models/
 │   ├── BaseEntity.cs
 │   ├── BaseResponse.cs
+│   ├── Bug.cs
+│   ├── BugAttachment.cs
+│   ├── BugComment.cs
+│   ├── Priority.cs
+│   ├── Project.cs
+│   ├── Status.cs
 │   └── User.cs
 ├── Properties/
 │   └── launchSettings.json
@@ -104,7 +112,6 @@ The application follows a strict MVC (Model-View-Controller) architecture patter
 - Node.js 18+
 - PostgreSQL 15+
 - Git
-
 
 ## 📝 License
 

@@ -26,6 +26,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - BaseResponse for API responses
   - User model for authentication
   - Model validation and audit fields
+- Bug tracking models
+  - Bug model with core properties
+  - BugAttachment for file attachments
+  - BugComment for issue discussions
+  - Priority enum for issue severity
+  - Project model for organization
+  - Status enum for issue states
+- Database structure
+  - BugTrackerDbContext for database operations
+  - Entity relationships configuration
+  - Database configuration
 - API documentation
   - HTTP request documentation
   - Request/response examples
